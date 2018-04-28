@@ -8,7 +8,6 @@ component "pdk-templates" do |pkg, settings, platform|
   pkg.build_requires "rubygem-mini_portile2"
   pkg.build_requires "rubygem-nokogiri"
   pkg.build_requires "rubygem-pdk"
-  pkg.build_requires "puppet-forge-api"
 
   if platform.is_windows?
     pkg.environment "PATH", settings[:gem_path_env]

@@ -3,6 +3,8 @@ component "puppet-forge-api" do |pkg, settings, platform|
   pkg.url "git@github.com:puppetlabs/puppet-forge-api.git"
 
   pkg.build_requires "pdk-runtime"
+  pkg.build_requires "pdk-templates"
+  pkg.build_requires "rubygem-bundler"
 
   # We need a few different things that come from the Forge API codebase so we do it all in this component.
 
